@@ -1,7 +1,7 @@
 
 #include <iostream>
 #include "Lab_1/lab_1.h"
-#include "Lab_2/lab_2.h"
+#include "Lab_2/lab_2_1.h"
 using namespace std;
 int main(){
     int choice;
@@ -10,7 +10,7 @@ int main(){
     switch (choice) {
         case 1: lab_1();
             break;
-        case 2: lab_2();
+        case 2: lab_2_1();
             break;
         case 3: exit(0);
         default: cout << "Error";

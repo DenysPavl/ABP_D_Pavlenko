@@ -1,7 +1,7 @@
 #include <iostream>
 #include <math.h>
 using namespace std;
-int lab_2() {
+int lab_2_1() {
     long n;
     double k1 = pow(-1, n), k2 = pow(2, n), sum, term;
     n = 0, sum = 0;
