@@ -10,7 +10,7 @@ for ( int i=0; i<200;++i){
 }
 double n=0,s=0;
     for(int i=0;i<200;++i) {
-        cout << i + 1 << "=" << arr[i] << endl;
+        cout << arr[i]<< "  " ;
     }
     // шукаємо кількість та суму додатніх масивів //
     for(int i=0;i<200;++i){
@@ -19,6 +19,7 @@ double n=0,s=0;
             s+=arr[i];
         }
     }
+    cout<<""<<endl;
     cout<<"kilkist masuviv >0 :"<<n<<endl;
     cout<<"suma masuviv >0 :"<<s<<endl;
     // середнє арифметичне дод. масивів //
@@ -30,7 +31,7 @@ double n=0,s=0;
         if(arr[i]<0){
             arr[i]=avig;
         }
-        cout<<i+1<<"="<<arr[i]<<endl;
+        cout<<arr[i]<<"  ";
     }
     return 0;
 }
