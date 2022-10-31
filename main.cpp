@@ -3,6 +3,7 @@
 #include "Lab_2_1/lab_2_1.h"
 #include "Lab2_2/lab_2_2.h"
 #include "Lab_3/lab_3.h"
+#include "Lab_4/lab_4.h"
 using namespace std;
 int main(){
     int choice;
@@ -17,7 +18,8 @@ int main(){
             break;
         case 4:lab_3();
             break;
-        case 5:lab_4()
+        case 5:lab_4();
+            break;
         case 6: exit(0);
         default: cout << "Error";
     }
