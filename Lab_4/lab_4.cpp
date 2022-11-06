@@ -19,10 +19,10 @@ int lab_4(void) {
     int arr2[n];
     int arr3[m];
     //masuv
-   // for (int i = 0; i < n; ++i)
-      //  arr2[i]=i+1;
-    //for (int i = 0; i < m; ++i)
-    //arr3[i]=i+1 ;
+    for (int i = 0; i <= n; ++i)
+        arr2[i]=i+1;
+    for (int i = 0; i <= m; ++i)
+        arr3[i]=i+1 ;
     for (int i = 0; i < r; ++i)
         for (int j = 0; j < r; ++j)
             arr[i][j] = rand() % 100;
@@ -36,11 +36,14 @@ int lab_4(void) {
     // виділення масивів
     for (j = 0; j < r; j++) {
         for (i = r - j; i < j; i++)
-            arr[i][j] = arr2[size++];
+        //if (i>j && i + j +1 < r)
+            arr2[size++]= arr[i][j];
 
         for (i = j + 1; i < r - j - 1; i++)
-            arr[i][j] = arr2[size++];
-        // swap(arr2[size++],arr3[size++]);
+       // if (i<j && i + j +1 > r)
+            arr3[size++]=arr[i][j];
+
+         swap(arr2[size++],arr3[size++]);
     }
     for (int i = 0; i < r; ++i) {
         for (int j = 0; j < r; ++j) {
