@@ -19,10 +19,10 @@ int lab_4(void) {
     int arr2[n];
     int arr3[m];
     //masuv
-    for (int i = 0; i <= n; ++i)
+    /*for (int i = 0; i <= n; ++i)
         arr2[i]=i+1;
     for (int i = 0; i <= m; ++i)
-        arr3[i]=i+1 ;
+        arr3[i]=i+1 ;*/
     for (int i = 0; i < r; ++i)
         for (int j = 0; j < r; ++j)
             arr[i][j] = rand() % 100;
@@ -34,17 +34,11 @@ int lab_4(void) {
     }
     cout << endl;
     // виділення масивів
-    for (j = 0; j < r; j++) {
-        for (i = r - j; i < j; i++)
-        //if (i>j && i + j +1 < r)
-            arr2[size++]= arr[i][j];
-
-        for (i = j + 1; i < r - j - 1; i++)
-       // if (i<j && i + j +1 > r)
-            arr3[size++]=arr[i][j];
-
-         swap(arr2[size++],arr3[size++]);
-    }
+    for (int i = 0; i < r; i++)
+        for (int j = 0; j < r; j++) {
+            if (i > j && i < r - 1 - j) swap(arr[i][j], arr[i][r - 1 - j]);
+        }
+    cout << endl;
     for (int i = 0; i < r; ++i) {
         for (int j = 0; j < r; ++j) {
             cout << arr[i][j] << "\t";
