@@ -8,7 +8,7 @@
 using namespace std;
 
 int lab_5() {
-    time(0);
+    srand(time(0));
     int size;
     int *ar;
     cout << "vvedit rozmir masuvy" << endl;
