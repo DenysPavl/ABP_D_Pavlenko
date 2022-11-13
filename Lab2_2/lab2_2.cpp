@@ -1,6 +1,7 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
+
 int lab_2_2(void) {
     double year1, year2, year3;
     char cer1[9], cer2[9], cer3[9];

@@ -14,15 +14,6 @@ int lab_4(void) {
     int size = 0;
     const int r = 9;
     int arr[r][r];
-    const int n = 16;
-    const int m = 16;
-    int arr2[n];
-    int arr3[m];
-    //masuv
-    /*for (int i = 0; i <= n; ++i)
-        arr2[i]=i+1;
-    for (int i = 0; i <= m; ++i)
-        arr3[i]=i+1 ;*/
     for (int i = 0; i < r; ++i)
         for (int j = 0; j < r; ++j)
             arr[i][j] = rand() % 100;

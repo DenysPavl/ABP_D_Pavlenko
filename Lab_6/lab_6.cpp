@@ -10,7 +10,6 @@
 using namespace std;
 
 void fill(int **a, int S) {
-    // int **a;
     int *C;
     C = new int[S];
     int size = 0;
@@ -48,7 +47,6 @@ void lab_6() {
         for (int i = 0; i < s; i++) {
             for (int j = 0; j < s; j++) {
                 arr[i][j] = 0;
-                //cout << arr[i][j] << "\t";
             }
             cout << endl;
         }
