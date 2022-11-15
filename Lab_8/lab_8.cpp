@@ -10,11 +10,9 @@ struct mon {
     double dim, sq;
     mon *dali;
 };
-mon *element , *persiu , *poperedniu , *noviu;
+mon *element , *persiu , *poperedniu;
 void StvorytySpisok();
 void VyvestiNaEkran();
-void StvorytyNovijElement();
-
 int lab_8() {
 
     StvorytySpisok();
@@ -43,7 +41,7 @@ void StvorytySpisok(void) {
         poperedniu = element;
         cout << ". Vvedit: Rik -" << "-go ychenoho\n";
         cin >> element->year;
-        if (element->year == 0) break;
+       // if (element->year == 0) break;
         cout << ". Vvedit: Name kerivnika -"<< "-go ychenoho\n";
         cin >> element->name;
         cout <<  ". Vvedit: Diametr antenu -" <<  "-go ychenoho\n";
