@@ -1,11 +1,7 @@
 #include<iostream>
-#include <stdlib.h>
-#include <utility>
 #include <algorithm>
-#include <vector>
 #include <iomanip>
 #include <string.h>
-#include <stdio.h>
 using namespace std;
 struct mon {
     char name[9];
@@ -16,7 +12,6 @@ int n = 4;
 int i, j, k,t;
 struct mon x ;
 int m;
-double yearx;
 int lab_7() {
     mon gg[n];
     for (i = 0; i < n; i++) {
@@ -38,6 +33,7 @@ int lab_7() {
     cout << "|  Rik   | Kerivnuk |   Diametr   |  Robocha chastota |\n";
     cout << "|        |          |  antenu(m)  |       (MGu)       |\n";
     cout << "|--------|----------|-------------|-------------------|\n";
+
     /*sortirovka*/
 
     for ( i = n - 1; i > 0; i--) {
