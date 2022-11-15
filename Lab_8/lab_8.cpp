@@ -43,6 +43,7 @@ void StvorytySpisok(void) {
         poperedniu = element;
         cout << ". Vvedit: Rik -" << "-go ychenoho\n";
         cin >> element->year;
+        if (element->year == 0) break;
         cout << ". Vvedit: Name kerivnika -"<< "-go ychenoho\n";
         cin >> element->name;
         cout <<  ". Vvedit: Diametr antenu -" <<  "-go ychenoho\n";
