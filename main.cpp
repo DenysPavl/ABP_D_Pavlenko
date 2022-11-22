@@ -8,10 +8,11 @@
 #include "Lab_6//lab_6.h"
 #include "Lab_7//lab_7.h"
 #include "Lab_8//lab_8.h"
+#include "Lab_9//lab_9.h"
 using namespace std;
 int main(){
     int choice;
-    cout << "Lab 1 = 1\nLab 2.1 = 2\nLab 2.2 = 3\nLab 3 = 4\nLab 4 = 5\nLab 5 = 6\nLab 6 = 7\nLab 7 = 8\nLab 8 = 9\nExit = 10\nPlease, chose your variant: ";
+    cout << "Lab 1 = 1\nLab 2.1 = 2\nLab 2.2 = 3\nLab 3 = 4\nLab 4 = 5\nLab 5 = 6\nLab 6 = 7\nLab 7 = 8\nLab 8 = 9\nLab 9 = 10\nExit = 11\nPlease, chose your variant: ";
     cin >> choice;
     switch (choice) {
         case 1: lab_1();
@@ -32,7 +33,9 @@ int main(){
             break;
         case 9:lab_8();
             break;
-        case 10: exit(0);
+        case 10:lab_9();
+            break;
+        case 11: exit(0);
         default: cout << "Error";
     }
     return 0;
