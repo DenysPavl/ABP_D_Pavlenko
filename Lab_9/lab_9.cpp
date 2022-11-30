@@ -10,10 +10,7 @@ struct mon {
     double dim, sq;
 };
 int n=4 ;
-int i, j, k,t,l,w;
-struct mon x ;
-int m;
-
+int i;
 void initf () {
     string path = "Lab_9.txt";
     ofstream fout;
@@ -47,7 +44,6 @@ void  f_add(mon*){
             cout << i + 1 << ". Vvedit: Chastota robotu -" << i + 1 << "-go ychenoho\n";
             cin >> gg[i].sq;
             if (!strcmp(gg[n].name, "***")) break;
-
             fout << gg[i].year << "\t" << gg[i].name << "\t" << gg[i].dim << "\t" << gg[i].sq << endl;
         }
     }
@@ -91,9 +87,9 @@ void fdel_item () {
     fout.clear();
 }
 void fshow_all (){
-    cout << "------------------------------------------\n";
-    cout << "|     Proektu poshyky pozazemnux sugnaliv |\n";
-    cout << "|-----------------------------------------|\n";
+    cout << "----------------------------------------\n";
+    cout << "|  Proektu poshyky pozazemnux sugnaliv |\n";
+    cout << "|--------------------------------------|\n";
     cout << "| Rik |Keriv| Diametr |Robocha chastota|\n";
     cout << "|     | nuk |antenu(m)|     (MGu)      |\n";
     cout << "|-----|-----|---------|----------------|\n";

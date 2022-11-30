@@ -8,11 +8,11 @@ struct mon {
     double year;
     double dim, sq;
 };
-int n = 4;
-int i, j, k,t,l;
-struct mon x ;
-int m;
 int lab_7() {
+    int n = 4;
+    int i, j, k,t,l;
+    struct mon x ;
+    int m;
     mon gg[n];
     for (i = 0; i < n; i++) {
         cout << i+1<<". Vvedit: Rik -" << i + 1 << "-go ychenoho\n";
