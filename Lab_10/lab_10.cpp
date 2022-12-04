@@ -16,14 +16,14 @@ public:
     void show();
 };
 
-void Tabl::set(int y,string n, int d, double s) {
+void Tabl::set(int y,std::string n, int d, double s) {
     year = y;
     name=n;
     dim = d;
     sim = s;
 }
 
-void Tabl::get(int &y,string n, int &d, double &s) {
+void Tabl::get(int &y,std::string n, int &d, double &s) {
     y = year;
     //delete n;
     n = name;
