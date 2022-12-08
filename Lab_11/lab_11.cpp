@@ -29,6 +29,7 @@ string tochka;
 public:
     Bus_(Bus& a):Bus(a){}
 void Get1(std::string x){
+        cout<<"Vvedit finishpoin dla Bus"<<endl;
     cin>>x;
     tochka=x;
 };
@@ -73,6 +74,8 @@ void start1() {
     cout << "|  name  |   size   |      ATP    |    Finish point   |\n";
     cout << "|--------|----------|-------------|-------------------|\n";
 }
+
+
 int lab_11(){
     string y;
     int s,t;
@@ -108,7 +111,6 @@ start_();
     b.Showatp();
     cout<<"3";
     d.Showatp();
- //~Bus();
  string x;
 Bus_ z(a) ;
 z.Get1(x);

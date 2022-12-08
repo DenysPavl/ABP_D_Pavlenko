@@ -12,10 +12,12 @@
 #include "Lab_10/lab_10.h"
 #include "Lab_11/lab_11.h"
 #include "Lab_12/lab_12.h"
+#include "Lab_14/lab_14.h"
+#include "Lab_13/lab_13.h"
 using namespace std;
 int main(){
     int choice;
-    cout << "Lab 1 = 1\nLab 2.1 = 2\nLab 2.2 = 3\nLab 3 = 4\nLab 4 = 5\nLab 5 = 6\nLab 6 = 7\nLab 7 = 8\nLab 8 = 9\nLab 9 = 10\nLab 10 = 11\nLab 11 = 12\nLab 12 = 13\nExit = 14\nPlease, chose your variant: ";
+    cout << "Lab 1 = 1\nLab 2.1 = 2\nLab 2.2 = 3\nLab 3 = 4\nLab 4 = 5\nLab 5 = 6\nLab 6 = 7\nLab 7 = 8\nLab 8 = 9\nLab 9 = 10\nLab 10 = 11\nLab 11 = 12\nLab 12 = 13\nLab 13 = 14\nLab 14 = 15\nExit = 16\nPlease, chose your variant: ";
     cin >> choice;
     switch (choice) {
         case 1: lab_1();
@@ -44,7 +46,11 @@ int main(){
             break;
         case 13:lab_12();
             break;
-        case 14: exit(0);
+        case 15:lab_14();
+            break;
+        case 14:lab_13();
+            break;
+        case 16: exit(0);
         default: cout << "Error";
     }
     return 0;
